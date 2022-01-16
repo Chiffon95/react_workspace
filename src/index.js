@@ -5,11 +5,16 @@ const scissors = "가위"
 const rock = "바위"
 const paper = "보"
 
+function handleClick(){
+  alert('이벤트 헨들러!');
+}
+
 ReactDOM.render(
   <>
   <Fragment>
     <p>안녕</p>
     <p>리액트</p>
+    <button onClick={handleClick}> 이벤트 헨들러!</button>
   </Fragment>
   {/* 불필요한 div 태그를 줄일 수 있다. (<></> --- 축약형) */}
 
